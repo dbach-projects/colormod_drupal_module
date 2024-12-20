@@ -3,6 +3,14 @@
 A module that allows you to change hsl() css variables located the current Drupal theme styles.css file.
 Changes are made in the administrator section of Drupal.
 
+## Install
+
+In a Drupal project:
+
+- create a colormod directory at: web/modules/custom/colormod
+- Add the repo contents in here
+- enable the module inside the Drupal admin section
+
 ## Features
 
 - dynamically generated form
