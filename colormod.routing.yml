@@ -1,0 +1,7 @@
+colormod.form:
+  path: "/admin/config/development/colormod"
+  defaults:
+    _title: "ColorMod settings"
+    _form: '\Drupal\colormod\Form\ColorModForm'
+  requirements:
+    _permission: "administer site configuration"

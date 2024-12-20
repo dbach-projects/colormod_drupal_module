@@ -1,0 +1,5 @@
+name: Color Mod
+description: A module that allows for the changing of css color variables
+core_version_requirement: ^10 || ^11
+type: module
+configure: colormod.form

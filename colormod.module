@@ -1,0 +1,27 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function colormod_help($route_name, RouteMatchInterface $route_match) {
+ switch ($route_name) {
+    case 'help.page.colormod':
+      $output = '';
+      $output .= '<h2>' . t('ColorMod module') . '</h2>';
+      $output .= '<h3>' . t('Allows you to change the hsl() css variables located in a themes styles.css file') . '</h3>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function colormod_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // print_r($form_id);
+  if ($form_id === 'colormod_form') {
+    $form['#attached']['library'][] = 'colormod/colormod.styles';
+  }
+
+}

@@ -1,0 +1,4 @@
+colormod.styles:
+  css:
+    theme:
+      css/styles.css: {}

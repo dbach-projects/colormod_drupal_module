@@ -1,0 +1,4 @@
+services:
+  colormod.colormod_service:
+    class: \Drupal\colormod\Service\ColorModService
+    arguments: []

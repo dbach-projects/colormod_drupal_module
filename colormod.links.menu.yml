@@ -1,0 +1,5 @@
+colormod.form:
+  title: "ColorMod settings"
+  description: "Configure the ColorMod module"
+  route_name: colormod.form
+  parent: system.admin_config_development
